@@ -138,7 +138,7 @@ const FormComponent = () => {
               <option value="" disabled>Loading categories...</option>
             ) : (
               categories.map((category) => (
-                <option key={category.id} value={category.id}>
+                <option key={category.categoryCode} value={category.categoryCode}>
                   {category.name}
                 </option>
               ))
