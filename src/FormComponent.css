@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    width: 600px; /* Set your desired width */
+  }
+  
+  .long-button {
+    width: 100%; /* Make the button 100% wide */
+  }
+  
