@@ -6,6 +6,7 @@ import { Form, Button } from "react-bootstrap";
 import "./FormComponent.css";
 
 const FormComponent = () => {
+  const { id } = useParams();
   const [formData, setFormData] = useState({
     category: "",
     fullName: "",
@@ -14,11 +15,12 @@ const FormComponent = () => {
     department: "",
     description: "",
     image: null,
+    contestCode:id,
   });
 
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { id } = useParams();
+
 
   useEffect(() => {
     const fetchCategories = async () => {
