@@ -17,11 +17,12 @@ const FormComponent = () => {
 
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch("https://app.paysnug.link/cont/category");
+        const response = await fetch(`https://app.paysnug.link/cont/category?id=${id}`);
         const apiData = await response.json();
   
         if (apiData && apiData.data && Array.isArray(apiData.data)) {
