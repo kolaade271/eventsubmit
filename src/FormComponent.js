@@ -15,7 +15,6 @@ const FormComponent = () => {
     department: "",
     description: "",
     image: null,
-    contestCode:id,
   });
 
   const [categories, setCategories] = useState([]);
